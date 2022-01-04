@@ -1,5 +1,3 @@
-# I FOLLOWED THIS TUTORIAL -> https://youtu.be/jO6qQDNa2UY
-
 import pygame
 import os
 pygame.init()
