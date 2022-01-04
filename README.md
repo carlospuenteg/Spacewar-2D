@@ -7,5 +7,5 @@ This was based on [this](https://github.com/techwithtim/PygameForBeginners) proj
 - Fixed some errors with the map boundaries
 - Changed it so it doesn't lag when the game ends
 - Added new sound effects, since the original ones were corrupted
-- Added so that if both players die at the same time, there's a tie
+- If both players die at the same time, there's a tie
 - Other minor changes, like the font
