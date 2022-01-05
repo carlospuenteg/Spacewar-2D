@@ -1,10 +1,16 @@
-import pygame
+#-----INSTALL MODULES IF NEEDED-----
+from pipinst import pipin
+pipin(['pygame'])
+
+################################################
+#-----IMPORT MODULES-----
 import os
+import sys
+#-----------------
+import pygame
 pygame.init()
 pygame.font.init()
 pygame.mixer.init()
-
-import sys
 
 ################################################
 #-----DISPLAY-----
@@ -20,7 +26,7 @@ BLACK = (0,0,0)
 RED = (255, 0, 0)
 YELLOW = (255, 255, 0)
 
-#-----BORDER-----
+#-----MIDDLE BORDER-----
 BORDER = pygame.Rect(WIDTH//2-5, 0, 10, HEIGHT)
 
 #-----FONTS-----
