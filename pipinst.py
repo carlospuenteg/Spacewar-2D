@@ -12,23 +12,28 @@ def installPip():
         os.system("python3 get-pip.py")
         os.remove("get-pip.py")
 
-def pipin(mods):
+def pipin(*mods):
+    mods = [m for m in mods]
     unable = []
     for mod in mods:
         try:
             importlib.import_module(mod)
         except:
             try:
-                os.system("pip install "+mod)
+                if os.system("pip install "+mod) != 0:
+                    raise Exception
             except:
                 try:
-                    os.system("pip3 install "+mod)
+                    if os.system("pip3 install "+mod) != 0:
+                        raise Exception
                 except:
                     try:
-                        os.system("python -m pip install "+mod)
+                        if os.system("python -m pip install "+mod) != 0:
+                            raise Exception
                     except:
                         try:
-                            os.system("python3 -m pip install "+mod)
+                            if os.system("python3 -m pip install "+mod) != 0:
+                                raise Exception
                         except:
                             unable.append(mod)
 

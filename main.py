@@ -1,12 +1,12 @@
-#-----INSTALL MODULES IF NEEDED-----
-from pipinst import pipin
-pipin(['pygame'])
-
-################################################
-#-----IMPORT MODULES-----
+#-----IMPORT STANDARD MODULES-----
 import os
 import sys
-#-----------------
+
+#-----INSTALL MODULES IF NEEDED-----
+from pipinst import pipin
+if pipin("pygameasd"):
+    exit()
+#-----IMPORT OTHER MODULES-----
 import pygame
 pygame.init()
 pygame.font.init()
