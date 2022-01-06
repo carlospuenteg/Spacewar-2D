@@ -4,7 +4,7 @@ import sys
 
 #-----INSTALL MODULES IF NEEDED-----
 from pipinst import pipin
-if pipin("pygameasd"):
+if pipin("pygame"):
     exit()
 #-----IMPORT OTHER MODULES-----
 import pygame
